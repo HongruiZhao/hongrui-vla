@@ -1,6 +1,8 @@
 """Test VLA Diffusion Policy on Meta-World MT1"""
 
 import os
+os.environ["MUJOCO_GL"] = "egl"
+
 import argparse
 import numpy as np
 import torch

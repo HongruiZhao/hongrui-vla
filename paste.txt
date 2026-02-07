@@ -1,0 +1,8 @@
+    def build_from_texts(self, texts):
+        """
+        Build the vocabulary from a list of texts.
+        """
+        for txt in texts:
+            for tok in txt.lower().split():
+                if tok not in self.vocab:
+                    self.vocab[tok] = len(self.vocab)

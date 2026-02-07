@@ -1,0 +1,10 @@
+dataset_path: "data/metaworld_drawer_close.npz"
+resize_to: 64
+batch_size: 64
+epochs: 50
+lr: 1.0e-4
+d_model: 128
+diffusion_T: 16
+save_path: "checkpoints/model.pt"
+device: "cuda"
+log_dir: "runs/mini_vla"

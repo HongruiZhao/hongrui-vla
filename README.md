@@ -36,7 +36,7 @@ Additionally, I provide scripts such as [scripts/collect_data.py](scripts/collec
 Create (or activate) a conda environment
 
 ```
-conda create --name mini-vla python=3.10
+conda create --name mini-vla python=3.12 # 3.12 for dataset
 conda activate mini-vla
 ```
 
@@ -86,10 +86,10 @@ Run the trained VLA inside the Meta-World MT1 environment.
 ```
 python -m scripts.test \
   --checkpoint checkpoints/model.pt \
-  --env-name push-v3 \
+  --env-name drawer-close-v3 \
   --episodes 5 \
   --max-steps 150 \
-  --instruction "push the object to the goal" \
+  --instruction "close the drawer" \
   --device cpu \
   --save-video \
   --video-dir videos

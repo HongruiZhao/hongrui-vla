@@ -1,0 +1,12 @@
+benchmark: 'Meta-World/MT1'
+
+meta_world_args:  
+  env_name: 'drawer-close-v3'
+  seed: 9982
+  render_mode: 'rgb_array' # or 'depth_array'
+  camera_name: '' # '' or ‘corner’ or ‘topview’ or ‘behindGripper’ or ‘gripperPOV’ or ‘corner2’ or ‘corner3’ or ‘corner4’
+episodes: 50
+max_steps: 150
+output_path: "data/metaworld_drawer_close.npz"
+sleep: 0.0
+instruction: "close the drawer"
